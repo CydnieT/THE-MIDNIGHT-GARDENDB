@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Member Dashboard · The Midnight Garden</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #000000;
+      --gold: #d4b06a;
+      --orchid: #381a25;
+      --moon: #4c694a;
+      --charcoal: #101010;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #181218 0, #000000 55%);
+      color: var(--gold);
+      font-family: Inter, sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 16px 10px;
+    }
+
+    .sigil {
+      width: 130px;
+      display: block;
+      margin: 0 auto 18px;
+      border-radius: 10px;
+      background: radial-gradient(circle at center, #381a25 0, #000 70%);
+      border: 1px solid rgba(212,176,106,0.6);
+    }
+
+    h1, h2, h3 {
+      font-family: "Playfair Display", serif;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      letter-spacing: 0.16em;
+    }
+
+    h3 {
+      margin-top: 6px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      opacity: 0.85;
+    }
+
+    .section {
+      padding: 32px 16px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    .section p {
+      font-size: 14px;
+      color: #f1e4c3;
+      margin: 0 0 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      background: var(--gold);
+      color: #000;
+      font-weight: 600;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin: 6px 6px;
+    }
+
+    .btn:hover {
+      background: #f1d49a;
+      color: #000;
+    }
+
+    .drop-card {
+      background: rgba(16,16,16,0.97);
+      border: 1px solid rgba(212,176,106,0.5);
+      padding: 24px 18px 28px;
+      margin: 24px auto;
+      border-radius: 16px;
+      max-width: 720px;
+      text-align: center;
+    }
+
+    .drop-card h2 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .drop-card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 16px;
+    }
+
+    .divider {
+      width: 80%;
+      max-width: 700px;
+      height: 1px;
+      background: linear-gradient(
+        to right,
+        transparent,
+        rgba(212,176,106,0.7),
+        transparent
+      );
+      margin: 32px auto;
+      opacity: 0.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 16px 24px;
+      font-size: 12px;
+      color: rgba(232,216,182,0.8);
+      border-top: 1px solid rgba(212,176,106,0.25);
+      margin-top: 30px;
+    }
+
+    footer p { margin: 4px 0; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <!-- TEMP placeholder sigil; replace with real base64 later -->
+  <img
+    class="sigil"
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAQAAABX0zb0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB3UlEQVR4nO3QQREAIAzAsOP9dwcHaGwxE0X0rKnd6xJAb97zdgMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAnVX9Cgf9zdlZs5vXbDaz2WzbbDa7bLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZXu3u93u93s9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4I/0BBb7pUwhW1XUAAAAASUVORK5CYII="
+    alt="Monthly Sigil"
+  >
+  <h1>THE MIDNIGHT GARDEN</h1>
+  <h3>MEMBER PORTAL</h3>
+</header>
+
+<div class="divider"></div>
+
+<section class="section">
+  <p>
+    You’re inside the Garden. Your Empress Drop access is active<br>
+    as long as your subscription remains active in Stripe.
+  </p>
+
+  <p style="font-size:13px; opacity:0.9;">
+    Bookmark this page. Do not share it publicly.
+  </p>
+</section>
+
+<div class="section">
+  <div class="drop-card">
+    <h2>January · INVOCATIO AUREAE GRAVITATIS</h2>
+    <p style="margin-bottom:14px;">
+      The Invocation of Golden Gravity · a dark-feminine wealth and magnetism ritual.
+    </p>
+
+    <!-- TEMP preview; replace with real base64 once PDFs are finalized -->
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAQAAABX0zb0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB3UlEQVR4nO3QQREAIAzAsOP9dwcHaGwxE0X0rKnd6xJAb97zdgMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAnVX9Cgf9zdlZs5vXbDaz2WzbbDa7bLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZXu3u93u93s9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4I/0BBb7pUwhW1XUAAAAASUVORK5CYII="
+      alt="January Ritual Preview"
+    >
+
+    <!-- Replace # with actual file URLs or base64 download links -->
+    <a class="btn" href="#" target="_blank">Ritual · Portrait PDF</a>
+    <a class="btn" href="#" target="_blank">Ritual · Square PDF</a>
+    <a class="btn" href="#" target="_blank">Wallpaper 1</a>
+    <a class="btn" href="#" target="_blank">Wallpaper 2</a>
+    <a class="btn" href="#" target="_blank">Wallpaper 3</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="drop-card">
+    <h2>February · The Shadow Bloom</h2>
+    <p>
+      A ritual of dark-rooted power and lunar reclamation.  
+      Unlocks automatically with your next billing cycle.
+    </p>
+
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAQAAABX0zb0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB3UlEQVR4nO3QQREAIAzAsOP9dwcHaGwxE0X0rKnd6xJAb97zdgMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAnVX9Cgf9zdlZs5vXbDaz2WzbbDa7bLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZbLbb7bbZXu3u93u93s9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4I/0BBb7pUwhW1XUAAAAASUVORK5CYII="
+      alt="February Teaser"
+    >
+
+    <p style="font-size:13px; opacity:0.9;">Releases on the 1st of the month.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <h2>Your Membership</h2>
+  <p>
+    As long as your subscription remains active, each new Empress Drop will appear here
+    with fresh downloads, wallpapers, and sigils.
+  </p>
+  <p style="font-size:13px; opacity:0.9;">
+    To update billing or cancel, use your Stripe customer portal link (from your receipt emails).
+  </p>
+</section>
+
+<footer>
+  <p>THE MIDNIGHT GARDEN · Murphy Made</p>
+  <p>All rights reserved · 2025</p>
+</footer>
+
+</body>
+</html>
