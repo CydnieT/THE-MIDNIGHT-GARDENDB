@@ -1,43 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wealth Altar Dashboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Empress Dashboard · The Midnight Garden</title>
 
   <style>
     body {
       margin: 0;
-      font-family: "Playfair Display", serif;
       background: #0b0b0b;
-      color: #e9c88f;
-      text-align: center;
-      padding: 40px 20px;
+      font-family: "Inter", sans-serif;
+      color: #f1e9d8;
     }
 
-    img {
-      width: 320px;
-      border: 1px solid #3b2f1a;
-      border-radius: 10px;
-      margin-bottom: 20px;
+    header {
+      padding: 16px 28px;
+      border-bottom: 1px solid #3a2f23;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #050505cc;
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 20;
     }
 
-    a {
-      color: #e9c88f;
+    header .logo {
+      font-family: "Playfair Display", serif;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+
+    header nav a {
+      color: #f1e9d8;
+      margin-left: 18px;
+      font-size: 14px;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    header nav a:hover {
       text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: 36px;
+      margin-bottom: 8px;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: #d2c4ab;
+    }
+
+    .section {
+      padding: 40px 20px 50px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      color: #c8b89d;
+      margin-bottom: 25px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #3a2f23;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      border: 1px solid #2c2419;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin: 8px 0;
+      font-family: "Playfair Display", serif;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      border: 1px solid #b89c59;
+      color: #f1e9d8;
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-size: 13px;
+    }
+
+    .card a:hover {
+      background: #b89c59;
+      color: #0b0b0b;
+    }
+
+    footer {
+      padding: 35px;
+      text-align: center;
+      font-size: 13px;
+      color: #8c806a;
+      border-top: 1px solid #3a2f23;
+      margin-top: 50px;
     }
   </style>
 </head>
 
 <body>
 
-<h1>Wealth Altar Dashboard</h1>
+<header>
+  <div class="logo">THE MIDNIGHT GARDEN</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="https://themidnightgardenus.etsy.com" target="_blank">Etsy Shop</a>
+  </nav>
+</header>
 
-<img src="images/wealth-altar-dashboard.png">
+<div class="hero">
+  <h1>Empress Dashboard</h1>
+  <p>Your personal ritual command center. All tools. All drops. All in one place.</p>
+</div>
 
-<p>Your automated money ritual hub.</p>
+<!-- MONTHLY DROP -->
+<section class="section">
+  <h2>January Empress Drop</h2>
+  <p>New drops unlock monthly. Download your ritual pages and wallpapers below.</p>
 
-<p><a href="index.html">← Return to Store</a></p>
+  <div class="grid">
+    
+    <div class="card">
+      <img src="images/midnight-garden-collection-cover.png" alt="Portrait Ritual PDF">
+      <h3>Ritual PDF (Portrait)</h3>
+      <a href="#">Download</a>
+    </div>
+
+    <div class="card">
+      <img src="images/mg-main-cover.webp" alt="Square Ritual PDF">
+      <h3>Ritual PDF (Square)</h3>
+      <a href="#">Download</a>
+    </div>
+
+    <div class="card">
+      <img src="images/dark-fem-lux-designs.png" alt="January Wallpaper">
+      <h3>Wallpaper 1</h3>
+      <a href="#">Download</a>
+    </div>
+
+    <div class="card">
+      <img src="images/dark-fem-oracle-journal.png" alt="January Wallpaper 2">
+      <h3>Wallpaper 2</h3>
+      <a href="#">Download</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- PERMANENT TOOLS -->
+<section class="section">
+  <h2>Permanent Tools</h2>
+  <p>Your core Midnight Garden assets — use these every month.</p>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="images/wealth-altar-dashboard.png" alt="Wealth Altar Dashboard">
+      <h3>Wealth Altar Dashboard</h3>
+      <a href="#">Download</a>
+    </div>
+
+    <div class="card">
+      <img src="images/midnight-routine-planner.png" alt="Midnight Routine Planner">
+      <h3>Midnight Routine Planner</h3>
+      <a href="#">Download</a>
+    </div>
+
+    <div class="card">
+      <img src="images/quit-gas-kit.png" alt="Herbal Blend Kit">
+      <h3>Herbal Ritual Blend Guide</h3>
+      <a href="#">Download</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © The Midnight Garden · Murphy Made · 2025  
+</footer>
 
 </body>
 </html>
